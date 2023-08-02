@@ -16,6 +16,7 @@ The purpose of this repository is to provide a versatile and comprehensive set o
 
 ### Notebook Assumptions:
 - Positive Labels: 
+    - test
 - Events: 
     - event information table: each row represents an event, each column is information about that event (event type, event date, customer that completed the event, etc.)
     - customer information table: each row represents a customer, each column is information about that customer (age, salary, start date, location, etc.)
