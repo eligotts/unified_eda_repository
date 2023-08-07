@@ -10,9 +10,9 @@ The purpose of this repository is to provide a versatile and comprehensive set o
 - Feature Store: This notebook is a set of interactive graphs that provide insights about the banking data. These graphs include histograms, time-series, monthly averages, group time series, correlation graphs, weekday averages, yearly trends, box plots for different time frames, etc. The user options include selecting the numeric column to explore, choosing the column to group the data by, selecting aggregation functions for time series analysis, specifying a range of dates to focus on, etc. Furthermore, the dashboard will automatically select the top five most interesting columns for the initial exploration, based on a scoring function that takes into account features like changes over time and uneven distributions.
 
 ### Required Data:
-- Positive Labels: 'positive_label_data' folder. Current version of this folder contains the file 'mock_agreements.pq'
-- Events: two tables, the first containing event information and the second containing customer information. Currently, these two tables are being pulled from an Insait snowflake account (which I think might expire soon)
-- Feature Store: 'feature_store_data' folder. Current version of this folder contains a parquet file for each day, from 2022-01-18 to 2022-12-31 (not included in this repo)
+- Positive Labels: 'positive_label_data' folder. Current version of this folder contains the file 'mock_agreements.pq.' This folder is contained in this repo.
+- Events: two tables, the first containing event information and the second containing customer information. Currently, these two tables are concatenated into one table, which is being pulled from google drive as a pickle file.
+- Feature Store: 'feature_store_data' folder. Current version of this folder contains a parquet file for each day, from 2022-01-18 to 2022-12-31 (not included in this repo). This data is being pulled from google drive as a zip file. It is unzipped in each feature_store script. NOTE: when unzipping, two subfolders are created - make sure your path to the data is correct.
 
 ### Notebook Assumptions:
 - Positive Labels: 
